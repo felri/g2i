@@ -27,6 +27,12 @@ const Question = (props) => {
     return unsubscribe;
   }, []);
 
+  useEffect(() => {
+    if(question) {
+      props.navigation.setOptions({ title: question.category })
+    }
+  }, [question]);
+
   return (
     question && 
       <View style={styles.container}>

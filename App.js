@@ -22,8 +22,20 @@ function App() {
             component={HomeScreen}
             options={{ title: "Welcome to the Trivia Challenge!" }}
           />
-          <Stack.Screen name="Question" component={QuestionScreen} />
-          <Stack.Screen name="Results" component={ResultsScreen} />
+          <Stack.Screen
+            name="Question"
+            component={QuestionScreen}
+            options={{
+              headerLeft: () => null,
+            }}
+          />
+          <Stack.Screen
+            name="Results"
+            component={ResultsScreen}
+            options={{
+              headerLeft: () => null,
+            }}
+          />
         </Stack.Navigator>
         <StatusBar style="auto" />
       </NavigationContainer>
