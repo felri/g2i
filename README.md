@@ -1,7 +1,7 @@
 # g2i
 
 ### live version
-https://exp.host/@ribas/g2i/index.exp?sdkVersion=42.0.0
+https://expo.dev/@ribas/g2i
 
 
 ```
